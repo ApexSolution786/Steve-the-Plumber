@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Steve the Plumber | Pittsburgh Plumbing Services</title>
+<meta name="description" content="Fast, honest plumbing in Pittsburgh. Leaks, drains, water heaters and emergencies. Call Steve the Plumber at (412) 918-6102.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f7f9;--surface:#fff;--ink:#0d2233;--muted:#4a6072;--brand:#0b5c8a;--brand-d:#08405f;--accent:#f5a300;--accent-ink:#2b1c00;--line:#d6e2ea;--hero:#0b2a40;--hero-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1620;--surface:#112331;--ink:#eaf2f7;--muted:#9bb2c2;--brand:#5bb4e5;--brand-d:#8cccf0;--line:#223a4b;--hero:#071a28}}
+:root[data-theme="dark"]{--bg:#0a1620;--surface:#112331;--ink:#eaf2f7;--muted:#9bb2c2;--brand:#5bb4e5;--brand-d:#8cccf0;--line:#223a4b;--hero:#071a28}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-weight:700;text-decoration:none;padding:15px 26px;border-radius:10px;font-size:1.05rem;border:2px solid var(--accent)}
+.btn:hover{background:#ffb81f}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--hero-ink);border-color:rgba(255,255,255,.55)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+header{background:var(--hero);color:var(--hero-ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.25rem;text-decoration:none}
+.nav .btn{padding:10px 18px;font-size:.95rem}
+.hero{padding:56px 0 76px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);font-weight:800;max-width:14ch}
+.idcard{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px 22px;border:2px solid var(--accent);border-radius:12px;padding:12px 20px;margin-bottom:26px}
+.idcard .bn{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.3rem}
+.idcard .bp{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(1.5rem,5vw,2.1rem);color:var(--accent);text-decoration:none}
+.hero p{font-size:1.2rem;max-width:46ch;color:#c9dbe7;margin:20px 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;color:#c9dbe7;font-size:.97rem;padding:0;list-style:none}
+.trust li::before{content:"✓ ";color:var(--accent);font-weight:700}
+section{padding:68px 0}
+h2{font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:800;margin-bottom:10px}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card .ic{font-size:1.7rem;margin-bottom:10px;display:block}
+.emerg{background:var(--accent);color:var(--accent-ink)}
+.emerg .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.emerg h2{margin:0;font-size:clamp(1.5rem,4vw,2.1rem)}
+.emerg p{margin:4px 0 0}
+.emerg .btn{background:var(--hero);border-color:var(--hero);color:#fff}
+.emerg .btn:hover{background:#12405e}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+.why h3{font-size:1.15rem;margin-bottom:6px;color:var(--brand)}
+.why p{margin:0;color:var(--muted)}
+.final{background:var(--hero);color:var(--hero-ink);text-align:center}
+.final p{color:#c9dbe7;margin:0 auto 28px;max-width:44ch}
+.final .num{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(2rem,7vw,3.4rem);font-weight:800;margin:6px 0 22px;text-decoration:none}
+footer{padding:26px 0;color:var(--muted);font-size:.9rem;text-align:center}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--hero)}
+.callbar .btn{width:100%;justify-content:center}
+@media (max-width:640px){.callbar{display:block}body{padding-bottom:74px}.hero{padding:40px 0 56px}section{padding:52px 0}.nav .btn{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="logo" href="#top">Steve the Plumber</a>
+      <a class="btn" href="tel:+14129186102">Call (412) 918-6102</a>
+    </div>
+    <div class="hero" id="top">
+      <div class="idcard"><span class="bn">Steve the Plumber</span><a class="bp" href="tel:+14129186102">(412) 918-6102</a></div>
+      <h1>Pittsburgh plumbing, fixed right the first time.</h1>
+      <p>Leaks, clogged drains, water heaters and burst pipes. Call Steve and get a straight answer and a fair price.</p>
+      <div class="actions">
+        <a class="btn" href="tel:+14129186102">Call Steve now: (412) 918-6102</a>
+        <a class="btn ghost" href="#services">See services</a>
+      </div>
+      <ul class="trust">
+        <li>Upfront pricing</li>
+        <li>Same-day visits</li>
+        <li>Local Pittsburgh plumber</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="services">
+  <div class="wrap">
+    <h2>What Steve can fix for you</h2>
+    <p class="lead">Small jobs and big ones, for homes and businesses across Pittsburgh.</p>
+    <div class="grid">
+      <div class="card"><span class="ic" aria-hidden="true">💧</span><h3>Leak repair</h3><p>Dripping taps, leaking pipes and hidden leaks found and fixed before they damage your home.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">🚿</span><h3>Drain cleaning</h3><p>Slow or blocked sinks, showers, toilets and main lines cleared and kept flowing.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">🔥</span><h3>Water heaters</h3><p>No hot water? Repair, replacement and installation of tank and tankless heaters.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">🔧</span><h3>Fixtures and installs</h3><p>Faucets, toilets, garbage disposals, sinks and appliance hookups installed properly.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">🏠</span><h3>Pipe repair and repiping</h3><p>Burst, corroded or frozen pipes repaired or replaced with quality materials.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">🚨</span><h3>Emergency plumbing</h3><p>Burst pipe or flooding? Call right away and get help fast.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="emerg">
+  <div class="wrap" style="padding-top:34px;padding-bottom:34px">
+    <div>
+      <h2>Plumbing emergency?</h2>
+      <p>Don't wait for the damage to spread. Call now.</p>
+    </div>
+    <a class="btn" href="tel:+14129186102">Call (412) 918-6102</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Why Pittsburgh calls Steve</h2>
+    <p class="lead">A local plumber who shows up, explains the problem and does the job properly.</p>
+    <div class="why">
+      <div><h3>Honest quotes</h3><p>You know the price before the work starts. No surprise charges.</p></div>
+      <div><h3>Clean, careful work</h3><p>Your home is treated with respect and left tidy when the job is done.</p></div>
+      <div><h3>Quick response</h3><p>Call, talk to Steve, and get a visit booked without the runaround.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Ready to get it fixed?</h2>
+    <a class="num" href="tel:+14129186102">(412) 918-6102</a>
+    <p>Tap to call Steve the Plumber and describe the problem. You'll get a clear plan and a fair price.</p>
+    <a class="btn" href="tel:+14129186102">Call Steve now</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© Steve the Plumber · Pittsburgh, PA · <a href="https://www.facebook.com/stevetheplumberpgh">Facebook</a></div>
+</footer>
+
+<div class="callbar"><a class="btn" href="tel:+14129186102">Call Steve: (412) 918-6102</a></div>
+</body>
+</html>
